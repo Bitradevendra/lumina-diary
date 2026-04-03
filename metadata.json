@@ -1,0 +1,8 @@
+{
+  "name": "Lumina Diary",
+  "description": "An AI-powered, scientifically designed diary application focusing on psychological well-being, voice automation, and automated insight generation.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}
