@@ -1,10 +1,17 @@
-# lumina-diary
+# Lumina Diary
 
-`lumina-diary` is a Vite and React diary application with Gemini-powered writing assistance and Firebase-backed user flows.
+A voice-aware, assistant-enhanced diary app that blends journaling, reminders, onboarding, and cloud-backed user flows into one polished personal writing experience.
 
-## Overview
+## Why It Has Strong Product Energy
 
-The app combines diary entry management, calendar-style views, onboarding for API configuration, and service modules for Gemini and Firebase integration.
+`lumina-diary` does not read like a basic notes app. It has identity. Between the guided onboarding, calendar-driven entry flow, voice interaction pieces, reminder support, Gemini features, and Firebase-backed state, it feels like a product trying to become a daily ritual.
+
+## What It Does
+
+- manages diary entries and reminders through a React app
+- supports onboarding for Gemini API configuration
+- integrates Firebase-backed auth and cloud data workflows
+- includes voice-oriented UI pieces and calendar-based navigation
 
 ## Project Structure
 
@@ -33,21 +40,19 @@ lumina-diary/
 npm install
 ```
 
-Create `.env.local` with your Gemini API key if needed:
+Create `.env.local` if needed:
 
 ```env
 GEMINI_API_KEY=your_api_key_here
 ```
 
-## Running The Project
-
-Development server:
+## Run Locally
 
 ```bash
 npm run dev
 ```
 
-Production build:
+Build and preview:
 
 ```bash
 npm run build
@@ -56,8 +61,12 @@ npm run preview
 
 ## How It Works
 
-- `App.tsx` coordinates authentication, diary state, onboarding, and editor flows
-- `components/` contains the login, editor, calendar, and onboarding UI
-- `services/geminiService.ts` provides Gemini-powered assistant features
-- `services/firebase.ts` handles Firebase-related integration used by the app
-- `constants.tsx` and `types.ts` define the shared app configuration and types
+- `App.tsx` coordinates authentication, diary entries, reminders, settings, and onboarding state.
+- `components/` contains the editor, login, calendar, and API-key onboarding interfaces.
+- `services/firebase.ts` handles cloud sync and user/session behavior.
+- `services/geminiService.ts` powers the assistant-style writing features.
+- `constants.tsx` and `types.ts` shape the application’s shared language and UI behavior.
+
+## Why Someone Would Open This Repo
+
+This is the kind of project that appeals to builders interested in personal software that feels guided, reflective, and a little more human than a generic CRUD app.
